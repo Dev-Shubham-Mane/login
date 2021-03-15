@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<h1 style="text-align: center;">REGISTRATION FORM</h1> 
+<title>Form validation</title>	
+<body>
+<form style="text-align: center;" name="RegForm" action="/submit.php" onsubmit="return validate()" method="post"> 
+  <p>Name: <input type="text" size="65" name="Name" /></p> 
+  <p>Password: <input type="text" size="65" name="Password"/> </p>
+  <p id="pwstrength"> </p>
+  
+  <p> Gender:
+  <input type="radio" id="male" name="Gender" value="male"/> 
+  <label for="male">Male</label>
+  <input type="radio" if="female" name="Gender" value="female/>
+  <label for="female">Female</label>
+  </p> 
+  <p>Address:<input type="text" size="65" name="address"/></p>
+  <p>Email:<input type="text" size="65" name="email"/></p>
+  <p>Phone:<input type="number" size="65" name="phoneno"/></p>
+    
+	<p> 
+            Department: 
+            <select type="text" value="" name="department"> 
+                <option>CSE</option> 
+                <option>Civil</option> 
+                <option>Mech</option> 
+                <option>ETC</option> 
+                <option>Electrical</option> 
+            </select> 
+        </p> 
+		
+		
+	<p> Year:
+  <input type="radio" id="fy" name="year" value="fy"/> 
+  <label for="fy">FY</label>
+  <input type="radio" id="sy" name="year" value="sy"/>
+  <label for="sy">SY</label>
+  <input type="radio" id="ty" name="year" value="ty"/>
+  <label for="ty">TY</label>
+    <input type="radio" id="ly" name="year" value="ly"/>
+  <label for="ly">LY</label>
+  </p> 
+   <p> 
+            <input type="submit" 
+                   value="send" name="Submit" /> 
+            <input type="reset" 
+                   value="Reset" name="Reset" /> 
+        </p> 
+		
+</form>
+</body>
+
+</head>
+</html>
+<script src="formvalidation.js"></script>
+
+
